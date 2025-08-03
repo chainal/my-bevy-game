@@ -353,6 +353,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "bevy-mobile"
+version = "0.1.0"
+dependencies = [
+ "bevy",
+]
+
+[[package]]
 name = "bevy_a11y"
 version = "0.16.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"

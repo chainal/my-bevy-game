@@ -1,0 +1,11 @@
+[package]
+name = "bevy-mobile"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "bevy_mobile_example"
+crate-type = ["lib", "cdylib"]
+
+[dependencies]
+bevy = { workspace = true }

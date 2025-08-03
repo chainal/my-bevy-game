@@ -6,3 +6,11 @@ edition = "2024"
 [dependencies]
 bevy = "0.16.1"
 clap = { version = "4.5.42", features = ["derive"] }
+
+[workspace]
+members = [
+    "bevy-mobile",
+]
+
+[workspace.dependencies]
+bevy = "0.16.1"
