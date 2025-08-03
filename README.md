@@ -15,7 +15,7 @@ cargo build
 cargo run -- -h
 ```
 ## bevy on android program
-### build bevy mobile so
+### build bevy mobile .so file
 ```
 cargo ndk -t arm64-v8a -o android_example/app/src/main/jniLibs build -p bevy-mobile
 ```
@@ -25,7 +25,7 @@ cd android_example
 ./gradlew build
 ```
 ### install to android devices
-in android_example directory
+now in **android_example** directory
 ```
 adb install ./app/build/outputs/apk/debug/app-debug.apk
 ```
