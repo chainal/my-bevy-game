@@ -1,6 +1,7 @@
 use clap::{Parser, Subcommand};
 
 mod rotate;
+mod transparency_2d;
 
 #[derive(Parser)]
 struct Args {
@@ -11,7 +12,8 @@ struct Args {
 #[derive(Subcommand)]
 enum Cmd {
     Hello,
-    BevyRotate
+    BevyRotate,
+    Transparency2d,
 }
 
 fn main() {
@@ -19,5 +21,6 @@ fn main() {
     match args.cmd {
         Cmd::Hello => println!("Hello, world!"),
         Cmd::BevyRotate => rotate::entro(),
+        Cmd::Transparency2d => transparency_2d::entro(),
     }
 }
