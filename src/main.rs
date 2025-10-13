@@ -28,5 +28,7 @@ fn main() {
         Cmd::BevyRotate => rotate::entro(),
         Cmd::Transparency2d => transparency_2d::entro(),
         Cmd::App { cmd: app::Cmd::Logs } => app::logs::entro(),
-    }
+        Cmd::App { cmd: app::Cmd::NoRenderer } => app::no_renderer::entro(),
+        Cmd::App { cmd: app::Cmd::Plugin } => app::plugin(),
+    };
 }
